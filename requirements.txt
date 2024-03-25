@@ -1,0 +1,8 @@
+timm == 0.5.4
+pytorch-lightning==1.5.9
+catalyst==20.9
+albumentations==1.1.0
+ttach == 0.0.3
+scipy
+einops
+addict
