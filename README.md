@@ -33,6 +33,6 @@ GLBViT
 
 ## Usage
  Clone the repository: git clone https://github.com/dh609/GLBViT.git  
-   Hyper-parameters configuration and training are implemented in config/whubuilding/Glb.py;  
+   Hyper-parameters configuration and training are implemented in config/whubuilding/glb.py;  
    test.py predict the test dataset;
-   Hyper-parameters configuration andtesting are implemented in config/whubuilding/Glb.py.
+   Hyper-parameters configuration andtesting are implemented in config/whubuilding/glb.py.
