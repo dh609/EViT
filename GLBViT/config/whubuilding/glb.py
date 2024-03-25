@@ -1,7 +1,6 @@
 from torch.utils.data import DataLoader
 from geoseg.losses import *
 from geoseg.datasets.whubuilding_dataset import *
-from geoseg.datasets.spacenet_dataset import *
 
 from geoseg.models.GLBViT import GLVBiT
 from catalyst.contrib.nn import Lookahead
@@ -41,13 +40,10 @@ loss = EdgeLoss(ignore_index=255)
 use_aux_loss = False
 
 # define the dataloader
-# train_dataset = SpacenetDataset(data_root='data/spacenet/train_val', mode='train', mosaic_ratio=0.25, transform=train_aug)
-# val_dataset = SpacenetDataset(data_root='data/spacenet/val', mode='val', transform=val_aug)
-# test_dataset = SpacenetDataset(data_root='data/spacenet/test', mode='val', transform=val_aug)
 
-# train_dataset = WHUBuildingDataset(data_root='data/whubuilding/train_val', mode='train', mosaic_ratio=0.25, transform=train_aug)
-# val_dataset = WHUBuildingDataset(data_root='data/whubuilding/val', mode='val', transform=val_aug)
-# test_dataset = WHUBuildingDataset(data_root='data/whubuilding/test', mode='val', transform=val_aug)
+ train_dataset = WHUBuildingDataset(data_root='data/whubuilding/train_val', mode='train', mosaic_ratio=0.25, transform=train_aug)
+ val_dataset = WHUBuildingDataset(data_root='data/whubuilding/val', mode='val', transform=val_aug)
+ test_dataset = WHUBuildingDataset(data_root='data/whubuilding/test', mode='val', transform=val_aug)
 
 train_loader = DataLoader(dataset=train_dataset,
                           batch_size=train_batch_size,
