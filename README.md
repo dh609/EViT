@@ -32,7 +32,7 @@ GLBViT
  * [SPACENET](https://spacenet.ai/spacenet-buildings-dataset-v2/ "SPACENET")
 
 ## Usage
- Clone the repository: git clone https://github.com/dh609/GLBViT.git  
+ Clone the repository: git clone https://github.com/dh609/EViT.git  
    Hyper-parameters configuration and training are implemented in config/whubuilding/glb.py;  
    test.py predict the test dataset;
    Hyper-parameters configuration andtesting are implemented in config/whubuilding/glb.py.
