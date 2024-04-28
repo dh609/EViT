@@ -1,10 +1,10 @@
-# GLBViT
+# EViT
 ## Folder Structure
 
 Prepare the following folders to organize this repo:
 ```none
-GLBViT
-├── GLBViT (code)
+EViT
+├── EViT (code)
 ├── model_weights
 ├── results (save the masks predicted by models)
 ├── lightning_logs (training logs)
@@ -33,6 +33,6 @@ GLBViT
 
 ## Usage
  Clone the repository: git clone https://github.com/dh609/EViT.git  
-   Hyper-parameters configuration and training are implemented in config/whubuilding/glb.py;  
+   Hyper-parameters configuration and training are implemented in config/whubuilding/evit.py;  
    test.py predict the test dataset;
-   Hyper-parameters configuration andtesting are implemented in config/whubuilding/glb.py.
+   Hyper-parameters configuration andtesting are implemented in config/whubuilding/evit.py.
